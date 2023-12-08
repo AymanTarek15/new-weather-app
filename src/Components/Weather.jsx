@@ -78,8 +78,9 @@ function Weather(props) {
                     {/* Add more data as needed */}
                 </div>
             ) : (
-                <p>Loading...</p>
-            )}
+                <p></p>
+            )
+            }
         </div>
     );
 }

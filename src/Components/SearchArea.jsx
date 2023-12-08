@@ -32,23 +32,29 @@ function SearchArea() {
     }
 
     return (
-        <div>
-            <div className="input-container">
-                <h1>Search for the city you are looking for</h1>
-                <input
-                    className="form-control"
-                    onChange={handleChange}
-                    type="search"
-                    name="search"
-                    id="city-search"
-                    value={input}
-                />
-                <button onClick={handleClick} className="btn bg-primary" name="search-button" id="search-button">
-                    Search
-                </button>
+        <div className="middle-container container text-container">
+            <div className="row">
+                <div className="input-container col-sm-12 col-lg-12 col-xl-6">
+                    <h1>Search for the city you are looking for</h1>
+                    <div className="input-form">
+                        <input
+                            className="form-control"
+                            onChange={handleChange}
+                            type="search"
+                            name="search"
+                            id="city-search"
+                            value={input}
+                        />
+                        <button onClick={handleClick} className="btn bg-primary" name="search-button" id="search-button">
+                            Search
+                        </button>
+                    </div>
+                </div>
 
+                <div className="col-sm-12 col-md-12 col-xl-6">
+                    <Weather inputValue={input} />
+                </div>
             </div>
-            <Weather inputValue={input} />
         </div>
     );
 }
