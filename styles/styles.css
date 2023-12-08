@@ -35,7 +35,7 @@ nav a {
 }
 
 input {
-    width: 30% !important;
+    width: 40% !important;
     height: 40px;
 }
 
@@ -53,6 +53,7 @@ input {
 
 .input-form{
     display: flex;
+    justify-content: center;
 }
 
 #search-button {
